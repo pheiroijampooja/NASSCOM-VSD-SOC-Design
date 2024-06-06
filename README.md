@@ -12,6 +12,8 @@ The purpose of routing is to connection of placed cells according to the netlist
 Input is the placed netlist and output is the routed design. A routing plan is created to interconnect all the cells by minimizing the wire length, delay, and congestion. Power and clock distribution networks is implemented. OpenROAD is used for global and detailed routing.
 4. Design Rule Check (DRC) & Layout Versus Schematic (LVS)
 The main purpose is to verify and check if the design meets the necessary requirements and ready for manufacturing. The input is the routed design and output is verified design ready for GDSII export. Design Rule Check (DRC) ensures that the layout complies with the manufacturing rules using Magic. Layout Versus Schematic (LVS) verifies that the layout matches the original netlist using Netgen. Timing analysis is used to ensure the design meets timing constraints using OpenSTA.
+
+
 ## Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK 
 
 The session is focus on the synthesis process of a specific design ‘picorv32‘ using the OpenLane flow. The netlist and essential reports is generated following the synthesis process.
