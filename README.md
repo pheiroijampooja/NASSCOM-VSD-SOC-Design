@@ -38,6 +38,6 @@ run_synthesis
 
 ### Assignment 1: Flip-flop ratio
 
-## Good floorplan vs bad floorplan and introduction to library cells
+## Day 2 - Good floorplan vs bad floorplan and introduction to library cells
 
 
