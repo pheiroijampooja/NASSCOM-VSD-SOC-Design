@@ -14,3 +14,22 @@ Input is the placed netlist and output is the routed design. A routing plan is c
 The main purpose is to verify and check if the design meets the necessary requirements and ready for manufacturing. The input is the routed design and output is verified design ready for GDSII export. Design Rule Check (DRC) ensures that the layout complies with the manufacturing rules using Magic. Layout Versus Schematic (LVS) verifies that the layout matches the original netlist using Netgen. Timing analysis is used to ensure the design meets timing constraints using OpenSTA.
 ## Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK 
 
+The session is focus on the synthesis process of a specific design ‘picorv32‘ using the OpenLane flow. The netlist and essential reports is generated following the synthesis process.
+
+The following are the commands used in the terminal to execute the synthesis and produce a netlist:
+ First we need to set the environment for the design to be synthesized using Openlane. We use the following commands to setup the environment:
+
+Change directory to openlane:
+cd /home/Desktop/work/tools/openlane_working_dir/openlane
+
+Run the flow.tcl in the interactive mode:
+ ./flow.tcl script -interactive
+
+Load the require package openlane 0.9
+package require openlane 0.9
+
+Preparation of the design files (run)
+prep -design picorv32a
+
+Synthesis is carried out using the following command:
+run_synthesis
