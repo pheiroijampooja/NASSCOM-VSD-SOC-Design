@@ -38,6 +38,32 @@ run_synthesis
 
 ### Assignment 1: Flip-flop ratio
 
+Total number of cells are 14876.
+Number of D flip-flops are 1613.
+D flip-flops ratio is  approximately 10.8% highlighting that D flip-flops are minority in the design.
+
+
 ## Day 2 - Good floorplan vs bad floorplan and introduction to library cells
 
+In floorplanning, position of the chip's main functional blocks is determined. It has impact on the chip's manufacturability, power consumption, and performance. The parameters deciding the floorplanning are utilization factor, aspect ratio, de-coupling capacitor, and power planning.
 
+Step to operate Floorplan with Openlane –
+
+• Setting default core utilization ratio as 65% and the aspect ratio as 1.
+• On completion of synthesis, the following command is used to generate the floorplan PDN: run_floorplan
+• The command to generate layout of floorplan using magic —T:
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def
+
+Step to execute Placement Using Openlane –
+
+• Run the command for placement : run_placement
+• The following command is used to generate placement layout in the magic tool:
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def
+
+### Assignment-2
+
+Information about the die area present in DEF (Design Exchange Format) file, is specified as (0 0) to (660685 671405). Here, 1 micron is equal to 1000 database units. So, dividing by 1000, gives the chip dimensions in micrometers. Therefore, chip width  and height is 660.685 micrometer and 671.405 micrometer respectively.
+
+## Day 3 - Design library cell using Magic Layout and ngspice characterization
+
+### Assignment-3
