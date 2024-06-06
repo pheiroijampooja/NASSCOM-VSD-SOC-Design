@@ -25,10 +25,10 @@ cd /home/Desktop/work/tools/openlane_working_dir/openlane
 Run the flow.tcl in the interactive mode:
  ./flow.tcl script -interactive
 
-Load the require package openlane 0.9
+Load the require package openlane 0.9:
 package require openlane 0.9
 
-Preparation of the design files (run)
+Preparation of the design files (run):
 prep -design picorv32a
 
 Synthesis is carried out using the following command:
