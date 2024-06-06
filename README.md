@@ -50,13 +50,16 @@ In floorplanning, position of the chip's main functional blocks is determined. I
 Step to operate Floorplan with Openlane –
 
 • Setting default core utilization ratio as 65% and the aspect ratio as 1.
+
 • On completion of synthesis, the following command is used to generate the floorplan PDN: run_floorplan
+
 • The command to generate layout of floorplan using magic —T:
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def
 
 Step to execute Placement Using Openlane –
 
 • Run the command for placement : run_placement
+
 • The following command is used to generate placement layout in the magic tool:
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def
 
