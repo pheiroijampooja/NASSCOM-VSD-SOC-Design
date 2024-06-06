@@ -38,6 +38,9 @@ run_synthesis
 
 ### Assignment 1: Flip-flop ratio
 
+<img width="523" alt="number of cells" src="https://github.com/pheiroijampooja/NASSCOM-VSD-SOC-Design/assets/171696481/7109696e-71ab-40e8-81db-5025d4475d2a">
+<img width="523" alt="FF_dfxtp_2" src="https://github.com/pheiroijampooja/NASSCOM-VSD-SOC-Design/assets/171696481/51ad71a0-e92e-4413-8791-42d3318ac399">
+
 Total number of cells are 14876.
 Number of D flip-flops are 1613.
 D flip-flops ratio is  approximately 10.8% highlighting that D flip-flops are minority in the design.
