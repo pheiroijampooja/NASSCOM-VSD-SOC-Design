@@ -37,3 +37,8 @@ Synthesis is carried out using the following command:
 run_synthesis
 
 ### Assignment 1
+### Flip-flop ratio
+
+## Good floorplan vs bad floorplan and introduction to library cells
+
+
