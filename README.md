@@ -75,7 +75,7 @@ Characterization of cell-
 
 Find 4 values
 
-(a) Rise transition: 2.24696 ns – 2.18265 ns = 0.06431 ns.
-(b) Fall transition:. 4.09551 ns – 4.05316 ns = 0.04235 ns.
-(c) Cell rise delay: 2.21155 ns – 2.15009 ns = 0.06146 ns.
-(d) Cell fall delay: 4.7835 ns – 4.05 ns = 0.02835 ns.
+(a) Rise transition:  2.24696 ns – 2.18265 ns = 0.06431 ns.
+(b) Fall transition:  4.09551 ns – 4.05316 ns = 0.04235 ns.
+(c) Cell rise delay:  2.21155 ns – 2.15009 ns = 0.06146 ns.   
+(d) Cell fall delay:  4.7835 ns – 4.05 ns = 0.02835 ns.
