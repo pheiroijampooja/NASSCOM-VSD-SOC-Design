@@ -69,6 +69,8 @@ Step to execute Placement Using Openlane –
 • The following command is used to generate placement layout in the magic tool:
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def
 
+<img width="926" alt="floor_plan" src="https://github.com/pheiroijampooja/NASSCOM-VSD-SOC-Design/assets/171696481/95184df0-4bcc-43e3-80e1-f37bc7d7dc71">
+
 ### Assignment-2
 
 <img width="741" alt="die area" src="https://github.com/pheiroijampooja/NASSCOM-VSD-SOC-Design/assets/171696481/aa4b2653-f4ea-431d-850e-829917ec9819">
