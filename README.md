@@ -152,11 +152,13 @@ run
 
 .end`
 
-<img width="921" alt="spice out" src="https://github.com/pheiroijampooja/NASSCOM-VSD-SOC-Design/assets/171696481/a96c311a-69aa-4c7c-ba40-5d565e6bee36">
 
 ![Layout](https://github.com/pheiroijampooja/NASSCOM-VSD-SOC-Design/assets/171696481/3fb507c7-470b-45d3-bf30-5f3963cf5b61)
 
 <img width="650" alt="ext2spice" src="https://github.com/pheiroijampooja/NASSCOM-VSD-SOC-Design/assets/171696481/742bc95e-a737-4eb1-9ada-860395617aac">
+
+<img width="921" alt="spice out" src="https://github.com/pheiroijampooja/NASSCOM-VSD-SOC-Design/assets/171696481/a96c311a-69aa-4c7c-ba40-5d565e6bee36">
+
 
 ### Assignment-3
 
