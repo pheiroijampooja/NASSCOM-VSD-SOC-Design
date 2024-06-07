@@ -79,6 +79,81 @@ Information about the die area present in DEF (Design Exchange Format) file, is 
 
 ## Day 3 - Design library cell using Magic Layout and ngspice characterization
 
+The working directory is cloned in the github repo using the command: git clone https://github.com/nickson-jose/vsdstdcelldesign.git 
+
+CMOS inverter layout is visualized with the command: magic -T sky130A.tech sky130_inv.mag & 
+
+SPICE netlist extraction
+
+Commands used in tkcon Magic window for spice extraction of custom inverter layout
+
+#Checking current directory:
+pwd
+
+#Command to extract to .ext format:
+extract all
+
+#Command to enable the parasitic extraction before converting ext to spice:
+ext2spice cthresh 0 rthresh 0
+
+#Command to convert to ext to spice:
+ext2spice
+
+#Inside sky130_inv.ext,the netlist information extracted can be observed
+
+
+#Modified spice netlist
+
+`.option scale=0.01u
+
+.include ./libs/pshort.lib
+
+.include ./libs/nshort.lib
+
+//.subckt sky130_inv A Y VPWR VGND
+
+M1001 Y A VGND VGND nshort_model.0 ad=1.44n pd=0.152m as=1.37n ps=0.148m w=35 l=23
+
+M1000 Y A VPWR VPWR pshort_model.0 ad=1.44n pd=0.152m as=1.52n ps=0.156m w=37 l=23
+
+VDD VPWR 0 3.3V
+
+VSS VGND 0 0V
+
+C6 Y 0 2fF
+
+Va A VGND PULSE(0V 3.3V 0 0.1ns 0.1ns 2ns 4ns)
+
+C0 A VPWR 0.0774fF
+
+C1 Y VPWR 0.117fF
+
+C2 A Y 0.07f4fF
+
+C3 Y VGND 0.279fF
+
+C4 A VGND 0.45f
+
+C5 VPWR VGND 0.781f
+
+//.ends
+
+.tran 1n 20n
+
+.control
+
+run
+
+.endc
+
+.end`
+
+<img width="921" alt="spice out" src="https://github.com/pheiroijampooja/NASSCOM-VSD-SOC-Design/assets/171696481/a96c311a-69aa-4c7c-ba40-5d565e6bee36">
+
+![Layout](https://github.com/pheiroijampooja/NASSCOM-VSD-SOC-Design/assets/171696481/3fb507c7-470b-45d3-bf30-5f3963cf5b61)
+
+<img width="650" alt="ext2spice" src="https://github.com/pheiroijampooja/NASSCOM-VSD-SOC-Design/assets/171696481/742bc95e-a737-4eb1-9ada-860395617aac">
+
 ### Assignment-3
 
 Characterization of cell-
