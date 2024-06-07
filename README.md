@@ -64,8 +64,8 @@ Step to operate Floorplan with Openlane –
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def
 
 <img width="926" alt="floor_plan_top_view" src="https://github.com/pheiroijampooja/NASSCOM-VSD-SOC-Design/assets/171696481/4a1aeb09-5ee8-4eba-b495-1527d8ca10fe">
-<img width="926" alt="floor_plan" src="https://github.com/pheiroijampooja/NASSCOM-VSD-SOC-Design/assets/171696481/7a66abac-b236-4ac6-86a5-15bcb43dcd39">
 
+<img width="926" alt="floor_plan" src="https://github.com/pheiroijampooja/NASSCOM-VSD-SOC-Design/assets/171696481/95184df0-4bcc-43e3-80e1-f37bc7d7dc71">
 Step to execute Placement Using Openlane –
 
 • Run the command for placement : run_placement
@@ -73,7 +73,7 @@ Step to execute Placement Using Openlane –
 • The following command is used to generate placement layout in the magic tool:
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def
 
-<img width="926" alt="floor_plan" src="https://github.com/pheiroijampooja/NASSCOM-VSD-SOC-Design/assets/171696481/95184df0-4bcc-43e3-80e1-f37bc7d7dc71">
+
 
 ### Assignment-2
 
