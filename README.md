@@ -36,6 +36,10 @@ prep -design picorv32a
 Synthesis is carried out using the following command:
 run_synthesis
 
+<img width="394" alt="3" src="https://github.com/pheiroijampooja/NASSCOM-VSD-SOC-Design/assets/171696481/dbd0193a-42f0-4472-b033-c0c62c405d3d">
+
+<img width="446" alt="6" src="https://github.com/pheiroijampooja/NASSCOM-VSD-SOC-Design/assets/171696481/11cddfd3-9904-4fb7-b11e-91c2ed8ef816">
+
 ### Assignment 1: Flip-flop ratio
 
 <img width="523" alt="number of cells" src="https://github.com/pheiroijampooja/NASSCOM-VSD-SOC-Design/assets/171696481/7109696e-71ab-40e8-81db-5025d4475d2a">
